@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,28 +35,29 @@
   <div id="preloder">
     <div class="loader"></div>
   </div>
-
+  
   <!-- Header section -->
   <header class="header-section">
     <div class="container">
       <div class="row">
         <div class="col-lg-3 col-md-3">
           <div class="site-logo">
-            <img class="logo" src="img/logo.jpeg" alt="">
+            <img class="logo" src="img/logo1.jpeg" alt="">
           </div>
           <div class="nav-switch">
             <i class="fa fa-bars"></i>
           </div>
         </div>
         <div class="col-lg-9 col-md-9">
-          <a href="" class="site-btn header-btn">Login/Sign Up</a>
+          <a href="#" id="button" class="site-btn2 header-btn">Login</a>
+          <a href="index.html#sign" class="site-btn header-btn">Sign Up</a>
   
           <nav class="main-menu">
             <ul>
               <li><a href="index.html">Home</a></li>
-              <li><a href="#">About us</a></li>
+              <li><a href="index.html#about">About us</a></li>
               <li><a href="index.html#here">Courses</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
   
             </ul>
           </nav>
@@ -64,8 +66,31 @@
     </div>
   </header>
   <!-- Header section end -->
+  <!-- popup -->
+  <div class="popup">
+    <div class="popup-content">
+      <img src="https://icons.iconarchive.com/icons/hopstarter/sleek-xp-basic/256/Close-2-icon.png" alt="Close"
+        id="close">
+      <input type="text" placeholder="Username">
+      <input type="password" placeholder="Password">
+      <a href="#" id="login" class="button">Login</a>
+    </div>
+  </div>
+  
+  <script>
+    document.getElementById("button").addEventListener("click", function () {
+      document.querySelector(".popup").style.display = "flex";
+    })
 
-
+    document.getElementById("close").addEventListener("click", function () {
+      document.querySelector(".popup").style.display = "none";
+    })
+    document.getElementById("login").addEventListener("click", function () {
+      document.querySelector(".popup").style.display = "none";
+    })
+  </script>
+  <!-- popup end -->
+  
   <!-- Hero section -->
   <br>
   <br>
@@ -73,27 +98,23 @@
     <div class="container">
       <div class="hero-text text-white">
         <h2>Let Us Make Learning Easy</h2>
-
+  
       </div>
-
+  
     </div>
   </section>
   <!-- Hero section end -->
   <!-- school sectiom -->
     <section class="categories-section spad">
       <div class="container">
-        <div class="section-title">
-          <h2 id="here">Btech Courses</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum.
-            Ut ac ligula sapien. Suspendisse cursus faucibus finibus.
-          </p>
+        <div class="aboutus section-title">
+          <h2 id="here"><span class="colour">Btech</span> Courses</h2>
+        
         </div>
         <div class="row">
           <!-- categorie -->
           <div class="col-lg-4 col-md-6">
-            <div class="categorie-item">
+            <div class="categorie-item sec">
               <div class="ci-thumb set-bg">
                 <img
                   src="https://wp-media.petersons.com/blog/wp-content/uploads/2018/01/26100309/blur-close-up-code-computer-546819.jpg"
@@ -102,18 +123,18 @@
               <div class="dropdown">
                 <div class="ci-text">
                   <h5>CSE</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur</p>
+                  
                   <span><a href=""><i class="fas fa-arrow-right fa-3x"></i></a></span>
                 </div>
                 <div class="dropdown-content">
                   <a href="1stsem.html#here">Sem 1</a>
-                  <a href="#">Sem 2</a>
-                  <a href="#">Sem 3</a>
-                  <a href="#">Sem 4</a>
-                  <a href="#">Sem 5</a>
-                  <a href="#">Sem 6</a>
-                  <a href="#">Sem 7</a>
-                  <a href="#">Sem 8</a>
+                <a href="#">Sem 2(coming soon)</a>
+                <a href="#">Sem 3(coming soon)</a>
+                <a href="#">Sem 4(coming soon)</a>
+                <a href="#">Sem 5(coming soon)</a>
+                <a href="#">Sem 6(coming soon)</a>
+                <a href="#">Sem 7(coming soon)</a>
+                <a href="#">Sem 8(coming soon)</a>
                 </div>
               </div>
             </div>
@@ -122,7 +143,7 @@
     
           <!-- categorie -->
           <div class="col-lg-4 col-md-6">
-            <div class="categorie-item">
+            <div class="categorie-item sec">
               <div class="ci-thumb set-bg">
                 <img
                   src="https://images.idgesg.net/images/article/2018/10/artificial-intelligence_brain_machine-learning_digital-transformation_world-networking-100777429-large.jpg"
@@ -131,18 +152,18 @@
               <div class="dropdown">
                 <div class="ci-text">
                   <h5>IT</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur</p>
+                  
                   <span><a href=""><i class="fas fa-arrow-right fa-3x"></i></a></span>
                 </div>
                 <div class="dropdown-content">
                   <a href="1stsem.html#here">Sem 1</a>
-                  <a href="#">Sem 2</a>
-                  <a href="#">Sem 3</a>
-                  <a href="#">Sem 4</a>
-                  <a href="#">Sem 5</a>
-                  <a href="#">Sem 6</a>
-                  <a href="#">Sem 7</a>
-                  <a href="#">Sem 8</a>
+                <a href="#">Sem 2(coming soon)</a>
+                <a href="#">Sem 3(coming soon)</a>
+                <a href="#">Sem 4(coming soon)</a>
+                <a href="#">Sem 5(coming soon)</a>
+                <a href="#">Sem 6(coming soon)</a>
+                <a href="#">Sem 7(coming soon)</a>
+                <a href="#">Sem 8(coming soon)</a>
                 </div>
               </div>
             </div>
@@ -151,7 +172,7 @@
     
           <!-- categorie -->
           <div class="col-lg-4 col-md-6">
-            <div class="categorie-item">
+            <div class="categorie-item sec">
               <div class="ci-thumb set-bg">
                 <img
                   src="https://engineering.eckovation.com/wp-content/uploads/2018/10/eceminiproject.jpg"
@@ -160,18 +181,18 @@
               <div class="dropdown">
               <div class="ci-text">
                 <h5>ECE</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                
             <span><a href=""><i class="fas fa-arrow-right fa-3x"></i></a></span>
               </div>
                 <div class="dropdown-content">
                   <a href="1stsem.html#here">Sem 1</a>
-                  <a href="#">Sem 2</a>
-                  <a href="#">Sem 3</a>
-                  <a href="#">Sem 4</a>
-                  <a href="#">Sem 5</a>
-                  <a href="#">Sem 6</a>
-                  <a href="#">Sem 7</a>
-                  <a href="#">Sem 8</a>
+                <a href="#">Sem 2(coming soon)</a>
+                <a href="#">Sem 3(coming soon)</a>
+                <a href="#">Sem 4(coming soon)</a>
+                <a href="#">Sem 5(coming soon)</a>
+                <a href="#">Sem 6(coming soon)</a>
+                <a href="#">Sem 7(coming soon)</a>
+                <a href="#">Sem 8(coming soon)</a>
                 </div>
               </div>
 
@@ -192,18 +213,18 @@
               <div class="dropdown">
                 <div class="ci-text">
                   <h5>EEE</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur</p>
+                  
                   <span><a href=""><i class="fas fa-arrow-right fa-3x"></i></a></span>
                 </div>
                 <div class="dropdown-content">
                   <a href="1stsem.html#here">Sem 1</a>
-                  <a href="#">Sem 2</a>
-                  <a href="#">Sem 3</a>
-                  <a href="#">Sem 4</a>
-                  <a href="#">Sem 5</a>
-                  <a href="#">Sem 6</a>
-                  <a href="#">Sem 7</a>
-                  <a href="#">Sem 8</a>
+                  <a href="#">Sem 2(coming soon)</a>
+                  <a href="#">Sem 3(coming soon)</a>
+                  <a href="#">Sem 4(coming soon)</a>
+                  <a href="#">Sem 5(coming soon)</a>
+                  <a href="#">Sem 6(coming soon)</a>
+                  <a href="#">Sem 7(coming soon)</a>
+                  <a href="#">Sem 8(coming soon)</a>
                 </div>
               </div>
             </div>
@@ -221,18 +242,18 @@
               <div class="dropdown">
                 <div class="ci-text">
                   <h5>MAE</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur</p>
+                  
                   <span><a href=""><i class="fas fa-arrow-right fa-3x"></i></a></span>
                 </div>
                 <div class="dropdown-content">
                   <a href="1stsem.html#here">Sem 1</a>
-                  <a href="#">Sem 2</a>
-                  <a href="#">Sem 3</a>
-                  <a href="#">Sem 4</a>
-                  <a href="#">Sem 5</a>
-                  <a href="#">Sem 6</a>
-                  <a href="#">Sem 7</a>
-                  <a href="#">Sem 8</a>
+              <a href="#">Sem 2(coming soon)</a>
+              <a href="#">Sem 3(coming soon)</a>
+              <a href="#">Sem 4(coming soon)</a>
+              <a href="#">Sem 5(coming soon)</a>
+              <a href="#">Sem 6(coming soon)</a>
+              <a href="#">Sem 7(coming soon)</a>
+              <a href="#">Sem 8(coming soon)</a>
                 </div>
               </div>
             </div>
@@ -250,18 +271,18 @@
             <div  class="dropdown">
               <div class="ci-text">
                 <h5>Civil</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                
                 <span><a href=""><i class="fas fa-arrow-right fa-3x"></i></a></span>
               </div>
               <div class="dropdown-content">
                 <a href="1stsem.html#here">Sem 1</a>
-                <a href="#">Sem 2</a>
-                <a href="#">Sem 3</a>
-                <a href="#">Sem 4</a>
-                <a href="#">Sem 5</a>
-                <a href="#">Sem 6</a>
-                <a href="#">Sem 7</a>
-                <a href="#">Sem 8</a>
+                <a href="#">Sem 2(coming soon)</a>
+                <a href="#">Sem 3(coming soon)</a>
+                <a href="#">Sem 4(coming soon)</a>
+                <a href="#">Sem 5(coming soon)</a>
+                <a href="#">Sem 6(coming soon)</a>
+                <a href="#">Sem 7(coming soon)</a>
+                <a href="#">Sem 8(coming soon)</a>
               </div>
             </div>
             </div>
@@ -278,7 +299,7 @@
     <div class="row">
       <div class="widget-item">
 
-        <img class="" src="img/logo.jpeg" alt="">
+        <img class="" src="img/logo-foot.jpeg" alt="">
 
 
       </div>
