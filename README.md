@@ -1,2 +1,2 @@
 # EduFunda
-E learning website
+E learning website For College and School Students.
